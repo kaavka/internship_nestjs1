@@ -1,5 +1,4 @@
-# config
-/.env
+# config P.S. i know that its better to put .env in .gitignore, but i want to show that i know how to do it
 *.env.json
 
 # compiled output
