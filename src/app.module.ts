@@ -14,9 +14,10 @@ dotenv.config()
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
+      password: process.env.DATABASE_PASSWORD,
       autoLoadEntities: true,
       synchronize: false,
-      migrationsRun: false,
+      migrationsRun: true,
       logging: false,
       namingStrategy: new DatabaseNamingStrategy(),
       entities: [`${__dirname}/**/*.entity{.js,.ts}`],
